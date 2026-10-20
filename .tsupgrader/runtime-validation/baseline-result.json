@@ -1,0 +1,60 @@
+{
+  "planHash": "df262a1fadb944b05d583c94541664d0b0e869054a7c26cfc74f67d6d55b7e0e",
+  "phase": "baseline",
+  "recordedAtUtc": "2026-10-20T10:29:58.1228148Z",
+  "retryCount": 0,
+  "resetBaseline": false,
+  "complete": true,
+  "result": {
+    "setupSucceeded": true,
+    "setupDurationMs": 902,
+    "setupFailureOutput": null,
+    "assertions": [
+      {
+        "name": "tests-pass",
+        "kind": "process",
+        "verificationMethod": "test-results",
+        "passed": false,
+        "timedOut": false,
+        "skipped": false,
+        "skippedReason": null,
+        "exitCode": 1,
+        "outputSample": "\n\u003E task-engine@1.0.0 test\n\u003E node --test\n\nTAP version 13\n# file:///home/lorraine/personal-projects/task-engine/test/server.test.js:6\n# import { createAppServer } from \u0022../src/server.js\u0022;\n#          ^^^^^^^^^^^^^^^\n# SyntaxError: The requested module \u0027../src/server.js\u0027 does not provide an export named \u0027createAppServer\u0027\n#     at ModuleJob._instantiate (node:internal/modules/esm/module_job:226:21)\n#     at async ModuleJob.run (node:internal/modules/esm/module_job:335:5)\n#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n# Node.js v22.23.2\n# Subtest: test/server.test.js\nnot ok 1 - test/server.test.js\n  ---\n  duration_ms: 91.657952\n  type: \u0027test\u0027\n  location: \u0027/home/lorraine/personal-projects/task-engine/test/server.test.js:1:1\u0027\n  failureType: \u0027testCodeFailure\u0027\n  exitCode: 1\n  signal: ~\n  error: \u0027test failed\u0027\n  code: \u0027ERR_TEST_FAILURE\u0027\n  ...\n# file:///home/lorraine/personal-projects/task-engine/test/task-store.test.js:6\n# import { TaskStore } from \u0022../src/task-store.js\u0022;\n#          ^^^^^^^^^\n# SyntaxError: The requested module \u0027../src/task-store.js\u0027 does not provide an export named \u0027TaskStore\u0027\n#     at ModuleJob._instantiate (node:internal/modules/esm/module_job:226:21)\n#     at async ModuleJob.run (node:internal/modules/esm/module_job:335:5)\n#     at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)\n#     at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n# Node.js v22.23.2\n# Subtest: test/task-store.test.js\nnot ok 2 - test/task-store.test.js\n  ---\n  duration_ms: 88.172174\n  type: \u0027test\u0027\n  location: \u0027/home/lorraine/personal-projects/task-engine/test/task-store.test.js:1:1\u0027\n  failureType: \u0027testCodeFailure\u0027\n  exitCode: 1\n  signal: ~\n  error: \u0027test failed\u0027\n  code: \u0027ERR_TEST_FAILURE\u0027\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 0\n# fail 2\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 124.877884\n",
+        "durationMs": 575,
+        "testResults": {
+          "testFramework": "unknown",
+          "runnerDetectedFrom": "none",
+          "testsTotal": 0,
+          "testsPassed": 0,
+          "testsFailed": 0,
+          "testsSkipped": 0,
+          "parseFailed": true
+        }
+      }
+    ],
+    "executions": [
+      {
+        "source": "setup[0]",
+        "resolvedExecutable": "/home/lorraine/.nvm/versions/node/v22.23.2/bin/npm",
+        "args": [
+          "ci"
+        ],
+        "cwd": "/home/lorraine/personal-projects/task-engine",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      },
+      {
+        "source": "tests-pass",
+        "resolvedExecutable": "/home/lorraine/.nvm/versions/node/v22.23.2/bin/npm",
+        "args": [
+          "test"
+        ],
+        "cwd": "/home/lorraine/personal-projects/task-engine",
+        "env": {},
+        "prependPath": [],
+        "platform": "linux"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "task-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A modular task and workflow management engine built with Node.js.",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
